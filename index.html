@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title></title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAy8vLAAEDAAAROkkABAAAAAACBgAFAwAAIVJsALOliAAFAwkAT/T3AJTK/wAcTewAsOzvAB5I7wAfTuYA0LeiAHr6/wAnU+MAJ1HmABtHVQDHgAAA6+b3AMh9CQDm9/QA3d3dACNMWwArVfsA+e3oAO/w+gB+dHYAAAABAPLz8QA8X28ALmbmAPP09AAAAgcABAABAPT09ADg3eYABQABAEvy+wBNeY8AAQIQAAcACgD3+foAAAsQAOHn8gA8a+wA/f39AF/1+wAsUecAYfX7ADBfcAAkRlMA7+/vAL2yngDu8/IAbPT4AMC0mwDKysoAAAACAAEAAgArY/AAAAUIAAMEBQCJfmgAxLunALamjQD8/PsA+v3+AKjK7wAzWmsAau/zAO/o9gAGPUwAOv36AKfY/gAAAAMAxNXIAAACAADDtJwAAQMDADJp6AAJAgkABAUSACRO4AATSFIAvKWLAJF+aQD8/PwA/vz8AKWafQAgUfsAm5ubACFEWAApT/UAv+/yAOzu7gCj1PwAvbCaACBf+ADv8/QAAAAEALHS/wAGAAQABgIBAC5q7AAHAgEAHk3eAPf39wDN9/gAmc3xAAcHBwDp6ekAGUdZAJOEagAdS1MAL0ztAC1U6gC4s6QANU3nAAACAgCwn40AttfrABVN6AAtYfYAsqGKAAQCAgAHAAUAn87jAFd3jQC7pocA+fv7APv7+wCmvP4AJUzuANbW1gCampoA3vb/ANr//wAkR1EAv7KZAKyihQCas/YAAAEAAAAEAAAAAAYAAAUDAAQBAACupogAHUfgAAUBAAAACgAABwEAAAEECQAHBAAA8/v8ACJI7AD4+/wAzfv9ABhBUgAsReMA/vr5ACNR7ADm5PcAGEZYAB1EUgD///8ALE7sAGH2+gAoY/UA9/DuAAEBAQCwooYAAwIEAAAIBAAwYvIAGkjtAOPj4wAJBQQAHU/nAAgJBwAVRFMAH2FzAAwIBAD++P0AJVPhAP77/QDV1dUApKCBAGLz+wAfRFwAZfX4ABgLDQApVP8ARniKAMK1mwDv9/IAAAECAAMBAgC2oYQABwECAJqQfwDf6vAA5urnAP7+/gDg8vYA//7+AChU5QCdh24AwvX3AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqDFyiQAqB3M+X06IJBlaqKg8XooAoaaNyrASXW2ST6gxAYpeAIM1Hpl5DH6rMFDOqM6zvQC+0lnDh8wYJ2XRZ6jOMaitxLi/YH27a4sipJOoqIZxrVgQf56sSs0ckA+Tzm6bdEI7OMu1pVaxP1MbkzeTfENkUZUoEy8WHWbPopMJp0jHtrkLgrIzqQ52d5cfVzaTugCdFWhNFy1jJWmBAMg9xiMAr4AhVZxBwFSfRs5bqJTCdbcDSQpLFBooeryo0ECgKxHBOqoyNClMLHAAqJFhb5p4j5YIhMlcewJHDa2t01IgtI7Fxa6uRAaFLoytqAWjYiZsbGpqmASoOUUAqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+    <nav class="light-red lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo">
+                <i class="large material-icons" style="font-size: 30px">store</i>Shpping Store</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col s4"></div>
+            <div class="col s4">
+                <br><br><br>
+                <h3>Login system</h3><br>
+                <form id="form" class="form-horizontal" action="" method="POST" role="form">
+                    <i class="material-icons prefix">account_circle</i>
+                    <label for="username" class="col-s4 control-label">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Put a Username here." maxlength="12" autofocus>
+                    <span></span>
+                    <i class="material-icons prefix">live_help</i>
+                    <label for="password" class="col-s4 control-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Put a Password here." maxlength="12">
+                    <span></span>
+                    <br><button type="button" id="signin" name="button" class="waves-effect waves-light btn">
+            <i class="material-icons right">done_all</i>Login</button>
+                </form>
+                <br><br>
+                <div id="err" style="display:none" class="alert alert-danger alert-dismissable fade in">
+                    <a href="#" data-dismiss="alert"></a>
+                    <strong>Incorrect username or password</strong><br>
+                    <span style="color:blue;font-weight:bold" id="summary"></span>
+                </div>
+                <div id="suc" style="display:none" class="alert alert-success alert-dismissable fade in">
+                    <a href="#" data-dismiss="alert"></a>
+                    <strong>Login Successful!!!</strong>
+                </div>
+            </div>
+            <div class="col s4"></div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer class="page-footer orange">
+        <div class="container">
+            <div class="footer-copyright">
+                <div class="container" style="color: black;">
+                    <center>@ 2016
+                        <a class="text text-lighten-3" href="#" style="color: black; font-size: 20px;"> Jirayu Chinnawong 5730211011</a>
+                        <br>
+                    </center>
+                </div>
+            </div>
+    </footer>
+    <!--  Scripts-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/singin.js"></script>
+</body>
+
+</html>
